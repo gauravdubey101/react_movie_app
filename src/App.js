@@ -17,7 +17,7 @@ function App() {
     getMovies(FEATURED_API);
   },[]);
 
-  const getMovies =(API) =>{
+  const getMovies = (API) =>{
     fetch(API)
       .then((res) => res.json())
       .then((data) => {
