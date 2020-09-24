@@ -14,11 +14,7 @@ const Movie = ({title,poster_path,overview,vote_average}) => (
             <h2>overview:</h2>
             <p>{overview}</p>
         </div>
-
-
-
     </div>
-    
 
 );
 
