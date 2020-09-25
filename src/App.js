@@ -42,8 +42,10 @@ function App() {
     setSearchTerm(e.target.value);
   };
   return (
-    <>
+    <div>
+    <h1>Movie App</h1>
       <header>
+        
         <form onSubmit={handleOnSubmit}>
           <input
             className="search"
@@ -58,7 +60,7 @@ function App() {
         {movies.length > 0 &&
           movies.map((movie) => <Movie key={movie.id} {...movie} />)}
       </div>
-    </>
+    </div>
   );
 }
 
